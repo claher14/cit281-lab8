@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lab 8 – Claudia Herrera</title>
+  <meta charset="UTF-8">
+  <title>Lab 8 – Node.js & Express</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #e0f7fa, #f1f8e9);
+      background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
       color: #2c3e50;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #1abc9c;
+      background-color: #4db6ac;
       color: white;
-      padding: 40px;
+      padding: 50px;
       text-align: center;
-      border-bottom: 6px solid #16a085;
+      border-bottom: 5px solid #00796b;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
+      font-size: 2.6rem;
     }
 
     main {
@@ -43,35 +37,16 @@
       padding: 25px 30px;
       border-radius: 12px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-
-    section:hover {
-      transform: scale(1.01);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
     h2 {
-      color: #1abc9c;
-      font-size: 1.6rem;
-      margin-bottom: 10px;
+      color: #00796b;
+      font-size: 1.5rem;
     }
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-
-    a {
-      color: #2c3e50;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    a:hover {
-      color: #1abc9c;
-      text-decoration: underline;
+    p {
+      font-size: 1.1rem;
     }
 
     footer {
@@ -86,43 +61,33 @@
 </head>
 <body>
   <header>
-    <h1>Lab 8: Node.js & Express Server</h1>
-    <p>By Claudia Herrera</p>
+    <h1>Lab 8 – Node.js & Express</h1>
   </header>
 
   <main>
     <section>
       <h2>Overview</h2>
-      <p>This lab introduced the use of <strong>Node.js</strong> with the <strong>Express</strong> framework to build a basic server that serves static and dynamic content. It demonstrates how to use the <code>fetch()</code> API to retrieve external data and handle asynchronous operations with JavaScript promises.</p>
+      <p>In Lab 8, I created a Node.js server using Express to serve both dynamic and static content. This lab introduced me to chaining <code>fetch()</code> promises, working with JSONPlaceholder API routes, and managing local servers.</p>
     </section>
 
     <section>
       <h2>Technologies Used</h2>
       <ul>
         <li>Node.js</li>
-        <li>Express.js</li>
-        <li>JavaScript ES6</li>
+        <li>Express</li>
+        <li>JavaScript Promises and fetch()</li>
         <li>JSONPlaceholder API</li>
-        <li>Git & GitHub</li>
       </ul>
     </section>
 
     <section>
       <h2>What I Learned</h2>
-      <p>I practiced backend development by building routes, serving static files, and handling asynchronous data fetching with promise chains. I also learned how to use <code>nodemon</code> for development and structure a project for deployment on GitHub Pages.</p>
-    </section>
-
-    <section>
-      <h2>Demo Routes</h2>
-      <ul>
-        <li><a href="http://localhost:8080/photos" target="_blank">/photos – First 20 photo objects</a></li>
-        <li><a href="http://localhost:8080/photos/3" target="_blank">/photos/3 – Single photo object by ID</a></li>
-      </ul>
+      <p>I learned how to use Express middleware to serve static files, chain promises with <code>.then()</code> and <code>.catch()</code>, and build API routes that return dynamic JSON content.</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Claudia Herrera | CIT 281 Lab 8</p>
+    <p>© 2025 Claudia Herrera</p>
   </footer>
 </body>
 </html>
